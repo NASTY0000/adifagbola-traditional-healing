@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/adifagbola_logo_transparent_tight.png" type="image/png" />
   <title>Adifagbola Traditional Healing Ltd | Authentic Ifá Consultation</title>
-  <meta name="description" content="Authentic Ifá consultation, Yoruba cultural education and traditional wellbeing services available worldwide. Registered in England and Wales." />
+  <meta name="description" content="Authentic Ifá consultation, Ifá training and Yoruba cultural services available worldwide. Registered in England and Wales." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,21 +15,9 @@
       theme: {
         extend: {
           colors: {
-            forest: {
-              DEFAULT: '#14281c',
-              light: '#1e3d2a',
-              mid: '#2a5a3c',
-              dark: '#0c1a12'
-            },
-            gold: {
-              DEFAULT: '#e8c56a',
-              light: '#f5e6b8',
-              dark: '#c9a84a'
-            },
-            cream: {
-              DEFAULT: '#f7f4ef',
-              dark: '#ebe6dc'
-            },
+            forest: { DEFAULT: '#14281c', light: '#1e3d2a', mid: '#2a5a3c', dark: '#0c1a12' },
+            gold: { DEFAULT: '#e8c56a', light: '#f5e6b8', dark: '#c9a84a' },
+            cream: { DEFAULT: '#f7f4ef', dark: '#ebe6dc' },
             ink: '#2c2418',
           },
           fontFamily: {
@@ -43,44 +31,41 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
-    .hero-gradient {
-      background: linear-gradient(160deg, #0c1a12 0%, #14281c 40%, #1e3d2a 100%);
-    }
+    .hero-gradient { background: linear-gradient(160deg, #0c1a12 0%, #14281c 45%, #1e3d2a 100%); }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
 
   <header class="sticky top-0 z-50 bg-forest/95 backdrop-blur-md text-cream border-b border-forest-mid/40">
     <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 md:h-18">
+      <div class="flex items-center justify-between h-16">
         <a href="index.html" class="flex items-center gap-3 group">
-          <img src="images/adifagbola_logo_transparent_tight.png" alt="Adifagbola" class="w-10 h-10 md:w-11 md:h-11 object-contain group-hover:opacity-90 transition-opacity" />
+          <img src="images/adifagbola_logo_transparent_tight.png" alt="Adifagbola" class="w-10 h-10 object-contain" />
           <div class="hidden sm:block leading-tight">
-            <span class="font-serif text-lg font-semibold tracking-wide text-cream">Adifagbola</span>
+            <span class="font-serif text-lg font-semibold tracking-wide">Adifagbola</span>
             <span class="block text-[10px] text-gold tracking-[0.15em] uppercase">Traditional Healing</span>
           </div>
         </a>
-
         <nav class="hidden md:flex items-center gap-7">
           <a href="index.html" class="text-cream/80 hover:text-gold text-sm font-medium transition-colors">Home</a>
           <a href="services.html" class="text-cream/80 hover:text-gold text-sm font-medium transition-colors">Services</a>
           <a href="about.html" class="text-cream/80 hover:text-gold text-sm font-medium transition-colors">About</a>
+          <a href="shop.html" class="text-cream/80 hover:text-gold text-sm font-medium transition-colors">Shop</a>
           <a href="contact.html" class="text-cream/80 hover:text-gold text-sm font-medium transition-colors">Contact</a>
           <a href="contact.html" class="ml-1 px-5 py-2 bg-gold text-forest text-sm font-semibold rounded-full hover:bg-gold-dark transition-colors">Book Ifá Consultation</a>
         </nav>
-
         <button id="menu-btn" class="md:hidden p-2 text-cream" aria-label="Menu">
           <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
     </div>
-
     <div id="mobile-menu" class="hidden md:hidden bg-forest-dark border-t border-forest-mid/50">
       <nav class="px-5 py-4 space-y-1">
         <a href="index.html" class="block px-4 py-3 text-cream/90 hover:bg-forest-light rounded-lg text-sm">Home</a>
         <a href="services.html" class="block px-4 py-3 text-cream/90 hover:bg-forest-light rounded-lg text-sm">Services</a>
         <a href="about.html" class="block px-4 py-3 text-cream/90 hover:bg-forest-light rounded-lg text-sm">About</a>
+        <a href="shop.html" class="block px-4 py-3 text-cream/90 hover:bg-forest-light rounded-lg text-sm">Shop</a>
         <a href="contact.html" class="block px-4 py-3 text-cream/90 hover:bg-forest-light rounded-lg text-sm">Contact</a>
         <a href="contact.html" class="block mt-3 px-4 py-3 bg-gold text-forest text-center font-semibold rounded-lg text-sm">Book Ifá Consultation</a>
       </nav>
@@ -90,85 +75,81 @@
   <main class="flex-grow">
 
     <section class="hero-gradient text-cream relative overflow-hidden">
-      <div class="absolute inset-0 opacity-[0.07]" style="background-image: radial-gradient(circle at 20% 50%, #e8c56a 0%, transparent 50%), radial-gradient(circle at 80% 20%, #e8c56a 0%, transparent 40%);"></div>
-      
-      <div class="relative max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32">
+      <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 15% 40%, #e8c56a 0%, transparent 45%), radial-gradient(circle at 85% 15%, #e8c56a 0%, transparent 40%);"></div>
+      <div class="relative max-w-6xl mx-auto px-5 pt-20 pb-24 md:pt-28 md:pb-32">
         <div class="max-w-3xl mx-auto text-center">
-          <img src="images/adifagbola_logo_transparent_tight.png" alt="Adifagbola Traditional Healing Ltd" class="w-40 md:w-52 mx-auto mb-8 drop-shadow-lg" />
-          
-          <p class="text-gold/90 text-xs md:text-sm tracking-[0.25em] uppercase font-medium mb-5">
-            Ifá Wisdom · Ancestral Tradition · Spiritual Guidance
-          </p>
-          
-          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] tracking-tight mb-6">
+          <img src="images/adifagbola_logo_transparent_tight.png" alt="Adifagbola Traditional Healing Ltd" class="w-36 md:w-48 mx-auto mb-8 drop-shadow-lg" />
+          <p class="text-gold/90 text-xs md:text-sm tracking-[0.22em] uppercase font-medium mb-5">Ifá Wisdom · Ancestral Tradition · Spiritual Guidance</p>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-[3.4rem] font-bold leading-[1.15] tracking-tight mb-6">
             Authentic Ifá Consultation<br class="hidden sm:block" />
             <span class="text-gold">Rooted in Tradition</span>
           </h1>
-          
-          <p class="text-cream/75 text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-4">
-            Professional Ifá consultation, training and Yoruba cultural guidance available to clients worldwide.
+          <p class="text-cream/75 text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-3">
+            Professional Ifá consultation, training and Yoruba cultural guidance for clients worldwide.
           </p>
-          
-          <p class="text-cream/50 text-sm mb-10">
-            Registered in England & Wales · Serving clients globally
-          </p>
-
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gold text-forest font-semibold text-sm rounded-full hover:bg-gold-dark transition-all shadow-lg shadow-gold/10">
-              Book an Ifá Consultation
-            </a>
-            <a href="services.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border border-cream/25 text-cream font-medium text-sm rounded-full hover:bg-cream/10 transition-all">
-              View Services
-            </a>
+          <p class="text-cream/45 text-sm mb-8">Registered in England & Wales · Serving clients globally</p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gold text-forest font-semibold text-sm rounded-full hover:bg-gold-dark transition-all">Book an Ifá Consultation</a>
+            <a href="services.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border border-cream/25 text-cream font-medium text-sm rounded-full hover:bg-cream/10 transition-all">View Services</a>
           </div>
+          <p class="mt-5 text-cream/40 text-xs tracking-wide">100% Privacy & Confidentiality Maintained</p>
         </div>
       </div>
     </section>
 
     <section class="bg-gold text-forest">
-      <div class="max-w-6xl mx-auto px-5 py-4">
-        <p class="text-center text-sm md:text-base font-medium">
-          Officially registered in England and Wales · Ifá consultation available worldwide
-        </p>
+      <div class="max-w-6xl mx-auto px-5 py-3.5">
+        <p class="text-center text-sm font-medium">Officially registered in England and Wales · Ifá consultation available worldwide</p>
       </div>
     </section>
 
-    <section class="py-20 md:py-28 bg-cream">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+    <section class="py-20 md:py-24 bg-cream">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="text-center mb-14">
+          <p class="text-forest-mid text-xs tracking-[0.2em] uppercase font-medium mb-3">The Process</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest">How It Works</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-forest text-gold flex items-center justify-center font-serif text-xl font-bold">1</div>
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Book Your Time</h3>
+            <p class="text-ink/65 text-sm leading-relaxed">Schedule an Ifá consultation via WhatsApp or the contact page at a time that suits you.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-forest text-gold flex items-center justify-center font-serif text-xl font-bold">2</div>
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Video Call with Babaláwo</h3>
+            <p class="text-ink/65 text-sm leading-relaxed">Connect for a live consultation. Receive clear guidance rooted in authentic Ifá tradition.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-forest text-gold flex items-center justify-center font-serif text-xl font-bold">3</div>
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Guidance & Recommendations</h3>
+            <p class="text-ink/65 text-sm leading-relaxed">Receive spiritual insight, practical recommendations, and any prescribed ebo (offerings) or follow-up support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-5">
         <div class="text-center mb-14">
           <p class="text-forest-mid text-xs tracking-[0.2em] uppercase font-medium mb-3">What We Offer</p>
           <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest">Guided by Wisdom</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          <div class="bg-white rounded-2xl p-8 border border-cream-dark hover:border-gold/40 transition-colors">
-            <div class="w-11 h-11 rounded-full bg-forest/8 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
             <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Consultation</h3>
-            <p class="text-ink/70 text-sm leading-relaxed">
-              Authentic Ifá divination and spiritual consultation offering clarity, guidance and ancestral insight for life’s path.
-            </p>
+            <p class="text-ink/70 text-sm leading-relaxed mb-4">Authentic Ifá divination (Dáfá) offering clarity on destiny (Ori), life path, and spiritual matters.</p>
+            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
           </div>
-
-          <div class="bg-white rounded-2xl p-8 border border-cream-dark hover:border-gold/40 transition-colors">
-            <div class="w-11 h-11 rounded-full bg-forest/8 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            </div>
+          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
             <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Training</h3>
-            <p class="text-ink/70 text-sm leading-relaxed">
-              Structured learning in Ifá knowledge, divination principles and traditional practices for those called to deeper study.
-            </p>
+            <p class="text-ink/70 text-sm leading-relaxed mb-4">Structured learning in Ifá knowledge, divination principles and traditional practices for serious students.</p>
+            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
           </div>
-
-          <div class="bg-white rounded-2xl p-8 border border-cream-dark hover:border-gold/40 transition-colors">
-            <div class="w-11 h-11 rounded-full bg-forest/8 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
-            </div>
+          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
             <h3 class="font-serif text-xl font-semibold text-forest mb-3">Cultural Education</h3>
-            <p class="text-ink/70 text-sm leading-relaxed">
-              Teaching Yoruba language, history, values and living traditions with depth and cultural integrity.
-            </p>
+            <p class="text-ink/70 text-sm leading-relaxed mb-4">Yoruba language, history, values and living traditions taught with depth and cultural integrity.</p>
+            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
           </div>
         </div>
       </div>
@@ -177,54 +158,55 @@
     <section class="py-16 bg-forest text-cream">
       <div class="max-w-3xl mx-auto px-5 text-center">
         <h2 class="font-serif text-2xl md:text-3xl font-bold mb-4">Serving Clients Worldwide</h2>
-        <p class="text-cream/75 text-base leading-relaxed mb-8">
-          Whether you are in the UK, Africa, Europe, the Americas or elsewhere, you can book an authentic Ifá consultation and access our traditional services.
-        </p>
-        <a href="contact.html" class="inline-flex items-center justify-center px-7 py-3 bg-gold text-forest font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">
-          Reach Out to Schedule Ifá Consultation
-        </a>
+        <p class="text-cream/70 text-base leading-relaxed mb-8">Whether you are in the UK, Africa, Europe, the Americas or elsewhere, you can book an authentic Ifá consultation.</p>
+        <a href="contact.html" class="inline-flex items-center justify-center px-7 py-3 bg-gold text-forest font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">Reach Out to Schedule Ifá Consultation</a>
+        <p class="mt-4 text-cream/40 text-xs">100% Privacy & Confidentiality Maintained</p>
       </div>
     </section>
 
   </main>
 
   <footer class="bg-forest-dark text-cream border-t border-forest-mid/30">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-6xl mx-auto px-5 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <h3 class="font-serif text-lg font-semibold text-gold mb-3">Adifagbola Traditional Healing Ltd</h3>
-          <p class="text-cream/65 text-sm leading-relaxed">
-            Authentic Ifá consultation, training and Yoruba cultural services available worldwide. Registered in England and Wales.
-          </p>
+          <p class="text-cream/60 text-sm leading-relaxed">Authentic Ifá consultation, training and Yoruba cultural services available worldwide. Registered in England and Wales.</p>
         </div>
         <div>
           <h4 class="text-sm font-semibold text-gold tracking-wide mb-4">Navigate</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="index.html" class="text-cream/65 hover:text-gold transition-colors">Home</a></li>
-            <li><a href="services.html" class="text-cream/65 hover:text-gold transition-colors">Services</a></li>
-            <li><a href="about.html" class="text-cream/65 hover:text-gold transition-colors">About</a></li>
-            <li><a href="contact.html" class="text-cream/65 hover:text-gold transition-colors">Contact</a></li>
+            <li><a href="index.html" class="text-cream/60 hover:text-gold transition-colors">Home</a></li>
+            <li><a href="services.html" class="text-cream/60 hover:text-gold transition-colors">Services</a></li>
+            <li><a href="about.html" class="text-cream/60 hover:text-gold transition-colors">About</a></li>
+            <li><a href="shop.html" class="text-cream/60 hover:text-gold transition-colors">Shop</a></li>
+            <li><a href="contact.html" class="text-cream/60 hover:text-gold transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-sm font-semibold text-gold tracking-wide mb-4">Contact</h4>
-          <ul class="space-y-2 text-sm text-cream/65">
+          <ul class="space-y-2 text-sm text-cream/60">
             <li><a href="https://wa.me/447876051712" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp: +44 7876 051712</a></li>
             <li><a href="mailto:adifagbolatraditionalhealing@gmail.com" class="hover:text-gold transition-colors">adifagbolatraditionalhealing@gmail.com</a></li>
             <li>@Adifagbolatraditionalhealing</li>
           </ul>
         </div>
       </div>
-
       <div class="mt-12 pt-8 border-t border-forest-mid/40">
-        <p class="text-xs text-cream/50 leading-relaxed text-center max-w-3xl mx-auto">
-          <span class="text-gold/80 tracking-wider font-medium">ERINWOYA! ERINWOYA!! ERINWOYA!!!</span><br class="sm:hidden" />
+        <p class="text-xs text-cream/45 leading-relaxed text-center max-w-3xl mx-auto">
+          <span class="text-gold/80 tracking-wider font-medium">ERINWOYA! ERINWOYA!! ERINWOYA!!!</span>
           Our services are spiritual, cultural and traditional in nature and are not intended to diagnose, treat, cure or prevent any medical condition. We do not replace professional medical or legal advice. Please consult your GP or a qualified professional for any medical concerns.
         </p>
-        <p class="text-center text-xs text-cream/35 mt-5">© 2026 Adifagbola Traditional Healing Ltd. All rights reserved.</p>
+        <p class="text-center text-xs text-cream/30 mt-5">© 2026 Adifagbola Traditional Healing Ltd. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
+     aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
