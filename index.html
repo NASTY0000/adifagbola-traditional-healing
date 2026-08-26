@@ -31,15 +31,6 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(20, 40, 28, 0.65) 0%, rgba(12, 26, 18, 0.45) 100%);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 10;
-    }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -75,40 +66,26 @@
   </header>
 
   <main class="flex-grow">
-    <!-- Enhanced Hero Section with Image -->
-    <section class="relative h-[78vh] md:h-[85vh] overflow-hidden">
-      <!-- Background Image -->
-      <img src="hero.jpg" alt="Adifagbola Traditional Healing - Spiritual Wisdom" class="absolute inset-0 w-full h-full object-cover" />
-      
-      <!-- Overlay Gradient -->
-      <div class="hero-overlay"></div>
-      
-      <!-- Hero Content -->
-      <div class="hero-content h-full flex flex-col items-center justify-center px-5 sm:px-6 lg:px-8">
+    <!-- Hero Section with Background Image -->
+    <section class="relative w-full h-screen md:h-[85vh] bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(135deg, rgba(20, 40, 28, 0.6) 0%, rgba(12, 26, 18, 0.4) 100%), url('hero.jpg');">
+      <div class="w-full h-full flex flex-col items-center justify-center px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl text-center">
-          <p class="text-gold text-xs tracking-[0.3em] uppercase font-medium mb-6 animate-pulse">Authentic Traditional Wisdom</p>
-          <h1 class="font-serif text-4xl md:text-6xl font-bold text-cream mb-6 leading-tight">
+          <p class="text-gold text-xs tracking-[0.3em] uppercase font-medium mb-6">Authentic Traditional Wisdom</p>
+          <h1 class="font-serif text-5xl md:text-7xl font-bold text-cream mb-6 leading-tight drop-shadow-lg">
             Ifá Consultation & Yoruba Cultural Guidance
           </h1>
-          <p class="text-cream/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
+          <p class="text-cream/95 text-lg md:text-xl mb-10 leading-relaxed font-light drop-shadow">
             Connect with authentic spiritual wisdom rooted in generations of Ifá tradition. Serving clients worldwide with integrity and depth.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="contact.html" class="px-8 py-3 bg-gold text-forest font-semibold text-base rounded-full hover:bg-gold-dark transition-all hover:scale-105 shadow-lg">
+            <a href="contact.html" class="px-8 py-4 bg-gold text-forest font-semibold text-base rounded-full hover:bg-gold-dark transition-all hover:scale-105 shadow-lg">
               Book Consultation
             </a>
-            <a href="services.html" class="px-8 py-3 border-2 border-gold text-gold font-semibold text-base rounded-full hover:bg-gold hover:text-forest transition-all hover:scale-105">
+            <a href="services.html" class="px-8 py-4 border-2 border-gold text-gold font-semibold text-base rounded-full hover:bg-gold/10 transition-all hover:scale-105">
               Explore Services
             </a>
           </div>
         </div>
-      </div>
-
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gold">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
       </div>
     </section>
 
