@@ -1,0 +1,23 @@
+{
+  "name": "adifagbola-traditional-healing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Next.js partial migration for Adifagbola Traditional Healing — About page and ConsultantBio component",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.4.2",
+    "typescript": "^5.2.2"
+  }
+}
