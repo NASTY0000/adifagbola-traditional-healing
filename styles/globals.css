@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Editorial typography and palette */
+:root {
+  --forest-900: #1a3c28;
+  --gold-500: #f4d068;
+  --cream-50: #faf8f5;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: var(--cream-50);
+  color: var(--forest-900);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Ensure generous line-height for body copy */
+body, p {
+  line-height: 1.75;
+}
+
+/* Utility: playfair headings can be applied via the font class from next/font */
