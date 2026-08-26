@@ -31,6 +31,15 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(20, 40, 28, 0.65) 0%, rgba(12, 26, 18, 0.45) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 10;
+    }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -49,8 +58,8 @@
           <a href="contact.html" class="ml-1 px-5 py-2 bg-forest text-cream text-sm font-semibold rounded-full hover:bg-forest-light transition-colors">Book Ifá Consultation</a>
         </nav>
         <button id="menu-btn" class="md:hidden p-2 text-forest" aria-label="Menu">
-          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/></svg>
-          <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/></svg>
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="5" y2="5"/><line x1="4" x2="20" y1="19" y2="19"/></svg>
+          <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="M6 6 18 18"/></svg>
         </button>
       </div>
     </div>
@@ -66,13 +75,41 @@
   </header>
 
   <main class="flex-grow">
-    <section class="relative bg-forest-dark">
-      <a href="contact.html" class="block group" aria-label="Book an Ifá consultation">
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/hero-desktop.jpg" />
-          <img src="images/hero-mobile.jpg" alt="Carved ceremonial mask with cowrie shell — Experience Authenticity" class="w-full h-[78vh] md:h-[72vh] object-cover object-center" />
-        </picture>
-      </a>
+    <!-- Enhanced Hero Section with Image -->
+    <section class="relative h-[78vh] md:h-[85vh] overflow-hidden">
+      <!-- Background Image -->
+      <img src="hero.jpg" alt="Adifagbola Traditional Healing - Spiritual Wisdom" class="absolute inset-0 w-full h-full object-cover" />
+      
+      <!-- Overlay Gradient -->
+      <div class="hero-overlay"></div>
+      
+      <!-- Hero Content -->
+      <div class="hero-content h-full flex flex-col items-center justify-center px-5 sm:px-6 lg:px-8">
+        <div class="max-w-3xl text-center">
+          <p class="text-gold text-xs tracking-[0.3em] uppercase font-medium mb-6 animate-pulse">Authentic Traditional Wisdom</p>
+          <h1 class="font-serif text-4xl md:text-6xl font-bold text-cream mb-6 leading-tight">
+            Ifá Consultation & Yoruba Cultural Guidance
+          </h1>
+          <p class="text-cream/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
+            Connect with authentic spiritual wisdom rooted in generations of Ifá tradition. Serving clients worldwide with integrity and depth.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="px-8 py-3 bg-gold text-forest font-semibold text-base rounded-full hover:bg-gold-dark transition-all hover:scale-105 shadow-lg">
+              Book Consultation
+            </a>
+            <a href="services.html" class="px-8 py-3 border-2 border-gold text-gold font-semibold text-base rounded-full hover:bg-gold hover:text-forest transition-all hover:scale-105">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gold">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
     </section>
 
     <section class="bg-gold text-forest">
@@ -171,15 +208,15 @@
       <div class="mt-12 pt-8 border-t border-forest-mid/40">
         <p class="text-xs text-cream/45 leading-relaxed text-center max-w-3xl mx-auto">
           <span class="text-gold/80 tracking-wider font-medium">ERINWOYA! ERINWOYA!! ERINWOYA!!!</span>
-          Our services are spiritual, cultural and traditional in nature and are not intended to diagnose, treat, cure or prevent any medical condition. We do not replace professional medical or legal advice. Please consult your GP or a qualified professional for any medical concerns.
+          Our services are spiritual, cultural and traditional in nature and are not intended to diagnose, treat, cure or prevent any medical condition. We do not replace professional medical or mental health services.
         </p>
         <p class="text-center text-xs text-cream/30 mt-5">© 2026 Adifagbola Traditional Healing Ltd. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform" aria-label="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197."/></svg>
+  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.76.967-.93 1.166-.168.199-.337.223-.634.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.006a6.96 6.96 0 0 0-7.145 6.959c0 1.339.338 2.646.982 3.803l-1.052 3.849 3.949-1.032c1.11.603 2.358.92 3.651.92h.006A6.96 6.96 0 0 0 12.3 3.359c1.814 0 3.527.704 4.815 1.992a6.937 6.937 0 0 1 1.992 4.815M12.034 2.43c3.865 0 7.004 3.139 7.004 7.004 0 3.865-3.139 7.004-7.004 7.004-1.874 0-3.63-.73-4.949-2.048S5.037 13.908 5.037 12.034c0-3.865 3.139-7.004 7.004-7.004m0-1c-4.418 0-8.004 3.586-8.004 8.004 0 1.552.445 3.005 1.221 4.245L2.03 21.97l5.718-1.5c1.24.776 2.693 1.221 4.245 1.221 4.418 0 8.004-3.586 8.004-8.004 0-4.418-3.586-8.004-8.004-8.004"/></svg>
   </a>
 
   <script>
