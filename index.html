@@ -66,25 +66,43 @@
   </header>
 
   <main class="flex-grow">
-    <!-- Hero Section with Background Image -->
-    <section class="relative w-full h-screen md:h-[85vh] bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(135deg, rgba(20, 40, 28, 0.6) 0%, rgba(12, 26, 18, 0.4) 100%), url('hero.jpg');">
-      <div class="w-full h-full flex flex-col items-center justify-center px-5 sm:px-6 lg:px-8">
-        <div class="max-w-3xl text-center">
-          <p class="text-gold text-xs tracking-[0.3em] uppercase font-medium mb-6">Authentic Traditional Wisdom</p>
-          <h1 class="font-serif text-5xl md:text-7xl font-bold text-cream mb-6 leading-tight drop-shadow-lg">
-            Ifá Consultation & Yoruba Cultural Guidance
+    <!-- Hero Section - Split Layout -->
+    <section class="relative h-screen md:h-[90vh] bg-forest-dark overflow-hidden">
+      <!-- Left Side - Text Content -->
+      <div class="absolute inset-0 md:inset-y-0 md:left-0 md:w-1/2 flex flex-col justify-between p-8 md:p-16 z-20">
+        <!-- Top Navigation for Mobile -->
+        <div class="hidden md:flex items-center justify-between text-gold text-sm tracking-wide">
+          <nav class="flex gap-6">
+            <a href="about.html" class="hover:text-gold-light transition-colors">About</a>
+            <a href="services.html" class="hover:text-gold-light transition-colors">Services</a>
+            <a href="contact.html" class="hover:text-gold-light transition-colors">Rituals</a>
+            <a href="contact.html" class="hover:text-gold-light transition-colors">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Main Heading -->
+        <div class="flex flex-col justify-center flex-1">
+          <h1 class="font-serif text-5xl md:text-7xl font-bold text-gold leading-tight">
+            EXPERIENCE<br/>AUTHENTICITY
           </h1>
-          <p class="text-cream/95 text-lg md:text-xl mb-10 leading-relaxed font-light drop-shadow">
-            Connect with authentic spiritual wisdom rooted in generations of Ifá tradition. Serving clients worldwide with integrity and depth.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="contact.html" class="px-8 py-4 bg-gold text-forest font-semibold text-base rounded-full hover:bg-gold-dark transition-all hover:scale-105 shadow-lg">
-              Book Consultation
-            </a>
-            <a href="services.html" class="px-8 py-4 border-2 border-gold text-gold font-semibold text-base rounded-full hover:bg-gold/10 transition-all hover:scale-105">
-              Explore Services
-            </a>
-          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="flex items-end justify-between">
+          <div></div>
+          <a href="contact.html" class="px-8 py-3 bg-gold text-forest-dark font-bold text-sm tracking-wider hover:bg-gold-dark transition-colors">
+            BOOK A DIVINATION >
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side - Image -->
+      <div class="absolute inset-0 md:inset-y-0 md:right-0 md:w-1/2">
+        <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shell — Experience Authenticity" class="w-full h-full object-cover" />
+        
+        <!-- Top Right Tagline -->
+        <div class="absolute top-8 right-8 text-gold text-xs md:text-sm tracking-[0.3em] font-light">
+          TIMELESS. INTRICATE. WISDOM.
         </div>
       </div>
     </section>
