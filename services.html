@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/adifagbola_logo_transparent_tight.png" type="image/png" />
   <title>Services | Adifagbola Traditional Healing Ltd</title>
-  <meta name="description" content="Ifá Spiritual Consultation, Naming Ceremonies, Marriage Blessings, House Blessings, Ancestral Honour, and more." />
+  <meta name="description" content="Ifá consultation, Ifá initiation, naming ceremonies, ancestral honour and traditional services available worldwide." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +15,10 @@
       theme: {
         extend: {
           colors: {
-            forest: { DEFAULT: '#1a3c28', light: '#2a5c3e', dark: '#0f2418' },
-            gold: { DEFAULT: '#f4d068', dark: '#d4b048' },
-            cream: { DEFAULT: '#faf8f5', dark: '#f0ebe3' },
-            brown: '#5c4033',
+            forest: { DEFAULT: '#14281c', light: '#1e3d2a', mid: '#2a5a3c', dark: '#0c1a12' },
+            gold: { DEFAULT: '#e8c56a', light: '#f5e6b8', dark: '#c9a84a' },
+            cream: { DEFAULT: '#f7f4ef', dark: '#ebe6dc' },
+            ink: '#2c2418',
           },
           fontFamily: {
             serif: ['Playfair Display', 'Georgia', 'serif'],
@@ -32,178 +33,163 @@
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
   </style>
 </head>
-<body class="bg-cream text-brown min-h-screen flex flex-col antialiased">
+<body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
 
-  <!-- Navbar (same as index) -->
-  <header class="sticky top-0 z-50 bg-forest text-cream shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 md:h-20">
-        <a href="index.html" class="flex items-center gap-2 group">
-          <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold flex items-center justify-center text-forest font-serif font-bold text-lg md:text-xl shadow-sm group-hover:scale-105 transition-transform">A</div>
-          <div class="hidden sm:block">
-            <span class="font-serif text-lg md:text-xl font-semibold tracking-wide text-cream">Adifagbola</span>
-            <span class="block text-xs text-gold tracking-wider uppercase">Traditional Healing</span>
+  <header class="sticky top-0 z-50 bg-forest/95 backdrop-blur-md text-cream border-b border-forest-mid/40">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/adifagbola_logo_transparent_tight.png" alt="Adifagbola" class="w-10 h-10 object-contain" />
+          <div class="hidden sm:block leading-tight">
+            <span class="font-serif text-lg font-semibold tracking-wide">Adifagbola</span>
+            <span class="block text-[10px] text-gold tracking-[0.15em] uppercase">Traditional Healing</span>
           </div>
         </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="text-cream/90 hover:text-gold font-medium text-sm tracking-wide transition-colors">Home</a>
-          <a href="services.html" class="text-gold font-medium text-sm tracking-wide">Services</a>
-          <a href="about.html" class="text-cream/90 hover:text-gold font-medium text-sm tracking-wide transition-colors">About</a>
-          <a href="contact.html" class="text-cream/90 hover:text-gold font-medium text-sm tracking-wide transition-colors">Contact</a>
-          <a href="contact.html" class="ml-2 px-5 py-2.5 bg-gold text-forest font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors shadow-sm">Book Consultation</a>
+        <nav class="hidden md:flex items-center gap-7">
+          <a href="index.html" class="text-cream/80 hover:text-gold text-sm font-medium">Home</a>
+          <a href="services.html" class="text-gold text-sm font-medium">Services</a>
+          <a href="about.html" class="text-cream/80 hover:text-gold text-sm font-medium">About</a>
+          <a href="shop.html" class="text-cream/80 hover:text-gold text-sm font-medium">Shop</a>
+          <a href="contact.html" class="text-cream/80 hover:text-gold text-sm font-medium">Contact</a>
+          <a href="contact.html" class="ml-1 px-5 py-2 bg-gold text-forest text-sm font-semibold rounded-full">Book Ifá Consultation</a>
         </nav>
-        <button id="menu-btn" class="md:hidden p-2 rounded-md text-cream hover:bg-forest-light transition-colors" aria-label="Toggle menu">
-          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        <button id="menu-btn" class="md:hidden p-2 text-cream" aria-label="Menu">
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-forest-dark border-t border-forest-light">
-      <nav class="px-4 py-4 space-y-1">
-        <a href="index.html" class="block px-4 py-3 text-cream hover:bg-forest-light rounded-lg font-medium">Home</a>
-        <a href="services.html" class="block px-4 py-3 text-cream hover:bg-forest-light rounded-lg font-medium">Services</a>
-        <a href="about.html" class="block px-4 py-3 text-cream hover:bg-forest-light rounded-lg font-medium">About</a>
-        <a href="contact.html" class="block px-4 py-3 text-cream hover:bg-forest-light rounded-lg font-medium">Contact</a>
-        <a href="contact.html" class="block mt-3 px-4 py-3 bg-gold text-forest text-center font-semibold rounded-lg">Book Consultation</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-forest-dark border-t border-forest-mid/50">
+      <nav class="px-5 py-4 space-y-1">
+        <a href="index.html" class="block px-4 py-3 text-cream/90 rounded-lg text-sm">Home</a>
+        <a href="services.html" class="block px-4 py-3 text-cream/90 rounded-lg text-sm">Services</a>
+        <a href="about.html" class="block px-4 py-3 text-cream/90 rounded-lg text-sm">About</a>
+        <a href="shop.html" class="block px-4 py-3 text-cream/90 rounded-lg text-sm">Shop</a>
+        <a href="contact.html" class="block px-4 py-3 text-cream/90 rounded-lg text-sm">Contact</a>
+        <a href="contact.html" class="block mt-3 px-4 py-3 bg-gold text-forest text-center font-semibold rounded-lg text-sm">Book Ifá Consultation</a>
       </nav>
     </div>
   </header>
 
   <main class="flex-grow">
     <section class="bg-forest text-cream py-16 md:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-6xl mx-auto px-5 text-center">
         <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-        <p class="text-cream/90 text-lg max-w-2xl mx-auto">Authentic Ifá and Yoruba traditional services delivered with professionalism, care, and deep cultural integrity.</p>
+        <p class="text-cream/75 text-lg max-w-2xl mx-auto">Authentic Ifá consultation, initiation, ceremonies and cultural services available to clients worldwide.</p>
       </div>
     </section>
 
     <section class="py-16 md:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <!-- Service cards -->
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
-            </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Ifá Spiritual Consultation & Divination</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Authentic Ifá divination sessions offering deep spiritual insight, guidance, and clarity on life’s path through traditional Yoruba wisdom.</p>
-          </div>
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5M12 2a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"/><path d="M12 14v8"/><path d="M8 22h8"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ifa-consultation.jpg" alt="Ifá Spiritual Consultation and Divination" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Ifá Spiritual Consultation & Divination</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Authentic Ifá divination (Dáfá) offering spiritual insight, guidance and clarity on destiny (Ori) and life’s path.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Ìkọsẹ̀ Wáyé (Traditional Naming Ceremonies)</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Sacred naming ceremonies that welcome a new soul into the family and community, rooted in ancestral tradition and cultural significance.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ifa-initiation.jpg" alt="Ifá Initiation" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Ifá Initiation</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Traditional Ifá initiation rites for those called to receive Ifá, deepen their spiritual path and enter the lineage of practice.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Marriage Blessings & Traditional Weddings</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Traditional marriage blessings and Yoruba wedding rites that honour both partners and their families with spiritual and cultural depth.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ikose-waye.jpg" alt="Ìkọsẹ̀ Wáyé Traditional Naming Ceremony" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Ìkọsẹ̀ Wáyé (Traditional Naming Ceremonies)</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Sacred naming ceremonies that welcome a new soul into the family and community, rooted in ancestral tradition.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">House Blessings</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Spiritual cleansing and blessing of homes and spaces to invite peace, protection, and positive energy into your living environment.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ancestral-honour.jpg" alt="Ancestral Honour" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Ancestral Honour</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Rites dedicated to honouring ancestors and maintaining the sacred connection between the living and those who came before.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Ancestral Honour</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Rites and practices dedicated to honouring ancestors, maintaining the sacred connection between the living and those who came before.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/5796662d-3930-4df4-b6c5-fe67d4c64910.jpeg" alt="Spiritual Counselling" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Spiritual Counselling</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Compassionate spiritual guidance to support emotional, mental and spiritual wellbeing through traditional frameworks.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Spiritual Counselling</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Compassionate spiritual guidance and counselling to support emotional, mental, and spiritual wellbeing through traditional frameworks.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/house-blessing.jpg" alt="House Blessings" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">House Blessings</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Spiritual cleansing and blessing of homes and spaces to invite peace, protection and positive energy.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Herbal Wellbeing Support</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Traditional herbal knowledge and wellbeing support drawing on the rich botanical wisdom of Yoruba healing practices.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+          <article class="bg-white rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/community-events.jpg" alt="Community Events" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-2">Community Events</h3>
+              <p class="text-ink/70 text-sm leading-relaxed flex-grow">Gatherings, celebrations and community events that foster connection, learning and shared Yoruba heritage.</p>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Yoruba Cultural Education</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Educational sessions and workshops that share the language, history, values, and living traditions of Yoruba culture.</p>
-          </div>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
-            </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Spiritual Items</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Carefully prepared spiritual items and tools to support personal practice, protection, and connection to tradition.</p>
-          </div>
+          <article class="bg-white rounded-2xl p-6 border border-cream-dark flex flex-col">
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Marriage Blessings & Traditional Weddings</h3>
+            <p class="text-ink/70 text-sm leading-relaxed flex-grow">Traditional marriage blessings and Yoruba wedding rites that honour both partners and their families.</p>
+          </article>
 
-          <div class="bg-white rounded-2xl p-6 md:p-7 border border-cream-dark shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-300 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-forest/10 flex items-center justify-center text-forest mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
-            </div>
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3 leading-snug">Community Events</h3>
-            <p class="text-brown/75 text-sm leading-relaxed flex-grow">Gatherings, celebrations, and community events that foster connection, learning, and the shared practice of Yoruba heritage.</p>
-          </div>
+          <article class="bg-white rounded-2xl p-6 border border-cream-dark flex flex-col">
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Ifá Training</h3>
+            <p class="text-ink/70 text-sm leading-relaxed flex-grow">Structured learning in Ifá knowledge, divination principles and traditional practices for serious students.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-cream-dark flex flex-col">
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Yoruba Cultural Education</h3>
+            <p class="text-ink/70 text-sm leading-relaxed flex-grow">Sessions that share the language, history, values and living traditions of Yoruba culture.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-cream-dark flex flex-col">
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Herbal Wellbeing Support</h3>
+            <p class="text-ink/70 text-sm leading-relaxed flex-grow">Traditional herbal knowledge and wellbeing support drawn from Yoruba healing practices.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-cream-dark flex flex-col">
+            <h3 class="font-serif text-xl font-semibold text-forest mb-2">Spiritual Items</h3>
+            <p class="text-ink/70 text-sm leading-relaxed flex-grow">Carefully prepared spiritual items and tools to support personal practice and connection to tradition.</p>
+          </article>
+
         </div>
 
         <div class="mt-16 text-center">
-          <p class="text-brown/80 mb-6 text-lg">Ready to begin your journey with authentic tradition?</p>
-          <a href="contact.html" class="inline-flex items-center justify-center px-8 py-3.5 bg-forest text-cream font-semibold rounded-full hover:bg-forest-light transition-colors shadow-md">Book a Consultation</a>
+          <p class="text-ink/70 mb-5">Ready to begin? Reach out to schedule an Ifá consultation.</p>
+          <a href="contact.html" class="inline-flex items-center justify-center px-8 py-3.5 bg-forest text-cream font-semibold text-sm rounded-full hover:bg-forest-light transition-colors">Book an Ifá Consultation</a>
+          <p class="mt-4 text-ink/40 text-xs">100% Privacy & Confidentiality Maintained</p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-forest-dark text-cream mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <h3 class="font-serif text-xl font-semibold text-gold mb-3">Adifagbola Traditional Healing Ltd</h3>
-          <p class="text-cream/80 text-sm leading-relaxed">Authentic Ifá spiritual consultation, Yoruba cultural education, and traditional wellbeing services. Registered in England and Wales.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold text-gold mb-4 tracking-wide">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="index.html" class="text-cream/80 hover:text-gold transition-colors">Home</a></li>
-            <li><a href="services.html" class="text-cream/80 hover:text-gold transition-colors">Services</a></li>
-            <li><a href="about.html" class="text-cream/80 hover:text-gold transition-colors">About</a></li>
-            <li><a href="contact.html" class="text-cream/80 hover:text-gold transition-colors">Contact & Booking</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold text-gold mb-4 tracking-wide">Get in Touch</h4>
-          <ul class="space-y-2 text-sm text-cream/80">
-            <li><a href="https://wa.me/447876051712" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp: +44 7876 051712</a></li>
-            <li><a href="mailto:adifagbolatraditionalhealing@gmail.com" class="hover:text-gold transition-colors">adifagbolatraditionalhealing@gmail.com</a></li>
-            <li>Instagram / Facebook: <span class="text-cream">Adifagbolatraditionalhealing</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="mt-10 pt-8 border-t border-forest-light">
-        <p class="text-xs text-cream/70 leading-relaxed text-center max-w-4xl mx-auto">
-          <span class="font-semibold text-gold tracking-wider">ERINWOYA! ERINWOYA!! ERINWOYA!!!</span> Our services are spiritual, cultural and traditional in nature and are not intended to diagnose, treat, cure or prevent any medical condition. We do not replace professional medical or legal advice. Please consult your GP or a qualified professional for any medical concerns.
-        </p>
-        <p class="text-center text-xs text-cream/50 mt-4">© 2026 Adifagbola Traditional Healing Ltd. All rights reserved. Registered in England and Wales.</p>
-      </div>
+  <footer class="bg-forest-dark text-cream border-t border-forest-mid/30">
+    <div class="max-w-6xl mx-auto px-5 py-10">
+      <p class="text-xs text-cream/45 leading-relaxed text-center max-w-3xl mx-auto">
+        <span class="text-gold/80 tracking-wider font-medium">ERINWOYA! ERINWOYA!! ERINWOYA!!!</span>
+        Our services are spiritual, cultural and traditional in nature and are not intended to diagnose, treat, cure or prevent any medical condition. We do not replace professional medical or legal advice. Please consult your GP or a qualified professional for any medical concerns.
+      </p>
+      <p class="text-center text-xs text-cream/30 mt-4">© 2026 Adifagbola Traditional Healing Ltd. All rights reserved.</p>
     </div>
   </footer>
+
+  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
+     aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
