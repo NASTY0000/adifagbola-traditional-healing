@@ -33,17 +33,18 @@
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
     .hero-scrim {
       background:
-        linear-gradient(180deg, rgba(12, 26, 18, 0.15) 0%, rgba(12, 26, 18, 0.55) 48%, rgba(12, 26, 18, 0.92) 100%);
+        linear-gradient(180deg, rgba(12,26,18,0.35) 0%, rgba(12,26,18,0.62) 42%, rgba(12,26,18,0.92) 100%);
     }
     @media (min-width: 768px) {
       .hero-scrim {
         background:
-          linear-gradient(90deg, rgba(12, 26, 18, 0.88) 0%, rgba(12, 26, 18, 0.62) 38%, rgba(12, 26, 18, 0.12) 68%, transparent 100%);
+          radial-gradient(ellipse at 32% 50%, rgba(12,26,18,0.18) 0%, rgba(12,26,18,0.55) 42%, rgba(12,26,18,0.82) 100%),
+          linear-gradient(90deg, rgba(12,26,18,0.88) 0%, rgba(12,26,18,0.72) 36%, rgba(12,26,18,0.28) 62%, rgba(12,26,18,0.08) 100%);
       }
     }
     .hero-photo { object-position: center 18%; }
     @media (min-width: 768px) {
-      .hero-photo { object-position: 70% center; }
+      .hero-photo { object-position: 72% center; }
     }
   </style>
 </head>
@@ -87,24 +88,21 @@
         <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shells used in Ifá practice" class="hero-photo w-full h-full object-cover" />
       </div>
       <div class="hero-scrim absolute inset-0 z-10"></div>
-      <div class="relative z-20 min-h-[82vh] md:min-h-[88vh] flex items-end md:items-center px-5 sm:px-8 md:px-12 lg:px-16 pb-12 md:pb-0">
-        <div class="w-full max-w-xl">
-          <p class="text-gold text-[11px] md:text-xs tracking-[0.22em] uppercase font-medium">
-            Ifá Wisdom · Ancestral Tradition
+      <div class="relative z-20 min-h-[82vh] md:min-h-[88vh] flex items-end md:items-center px-5 sm:px-8 md:px-12 lg:px-16 pb-14 md:pb-0">
+        <div class="w-full max-w-2xl text-center md:text-left">
+          <p class="text-gold text-[10px] sm:text-[11px] md:text-xs tracking-[0.28em] uppercase font-medium leading-relaxed">
+            Ifá Wisdom · Ancestral Tradition ·
+            <span class="block md:inline">Spiritual Guidance</span>
           </p>
-          <p class="text-gold/80 text-[11px] md:text-xs tracking-[0.22em] uppercase font-medium mt-1">
-            Spiritual Guidance
-          </p>
-          <div class="w-12 h-px bg-gold/70 mt-5 mb-6"></div>
-          <h1 class="font-serif text-[2.15rem] sm:text-5xl md:text-6xl font-semibold text-cream leading-[1.12]">
+          <h1 class="font-serif mt-8 md:mt-10 text-[2.35rem] sm:text-5xl md:text-[3.65rem] lg:text-[4.15rem] font-medium text-cream leading-[1.12] tracking-tight">
             Authentic Ifá<br />
-            Consultation<br />
-            <span class="text-gold">Rooted in Tradition</span>
+            Consultation <span class="text-gold">Rooted in</span><br />
+            <span class="text-gold">Tradition</span>
           </h1>
-          <p class="mt-6 text-cream/80 text-sm md:text-base leading-relaxed max-w-md">
+          <p class="mt-7 md:mt-8 text-cream/75 text-[0.95rem] md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
             Professional Ifá consultation, training and Yoruba cultural guidance for clients worldwide.
           </p>
-          <p class="mt-3 text-cream/45 text-xs tracking-wide">
+          <p class="mt-4 text-cream/40 text-xs md:text-sm tracking-wide">
             Registered in England & Wales · Serving clients globally
           </p>
           <a href="contact.html" class="mt-8 inline-flex items-center justify-center px-7 py-3.5 bg-gold text-forest-dark font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">
