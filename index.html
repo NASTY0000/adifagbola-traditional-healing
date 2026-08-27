@@ -69,35 +69,22 @@
   </header>
 
   <main class="flex-grow">
-    <!-- Hero Section - Refactored Split Layout -->
     <section class="relative w-full h-screen md:h-[90vh] overflow-hidden bg-forest-dark">
-      <!-- Background Image (Right Side) -->
       <div class="absolute inset-0">
         <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shell — Experience Authenticity" class="w-full h-full object-cover" />
       </div>
-
-      <!-- Contrast Scrim: Dark gradient overlay from left to transparent right -->
       <div class="hero-scrim absolute inset-0 z-10"></div>
-
-      <!-- Unified Content Stack: Left-aligned, centered vertically -->
       <div class="absolute inset-0 z-20 flex items-center justify-start px-5 sm:px-8 md:px-12 lg:px-16">
         <div class="flex flex-col items-start gap-6 w-full md:w-1/2 max-w-lg">
-          
-          <!-- Eyebrow Text -->
           <p class="text-gold text-xs md:text-sm tracking-[0.25em] font-light uppercase">
             Timeless. Intricate. Wisdom.
           </p>
-
-          <!-- Main Headline -->
           <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-gold leading-tight">
             Experience<br />Authenticity
           </h1>
-
-          <!-- CTA Button -->
           <a href="contact.html" class="mt-4 px-8 py-4 bg-gold text-forest-dark font-bold text-sm md:text-base tracking-widest hover:bg-gold-dark transition-all duration-300 transform hover:scale-105 active:scale-95 min-h-12 flex items-center justify-center">
             BOOK A DIVINATION →
           </a>
-
         </div>
       </div>
     </section>
@@ -141,20 +128,29 @@
           <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest">Guided by Wisdom</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Consultation</h3>
-            <p class="text-ink/70 text-sm leading-relaxed mb-4">Authentic Ifá divination (Dáfá) offering clarity on destiny (Ori), life path, and spiritual matters.</p>
-            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+          <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ifa-consultation.jpg" alt="Ifá Consultation" class="w-full aspect-[16/10] object-cover object-center" />
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Consultation</h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4">Authentic Ifá divination (Dáfá) offering clarity on destiny (Ori), life path, and spiritual matters.</p>
+              <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+            </div>
           </div>
-          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Training</h3>
-            <p class="text-ink/70 text-sm leading-relaxed mb-4">Structured learning in Ifá knowledge, divination principles and traditional practices for serious students.</p>
-            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+          <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/ifa-initiation.jpg" alt="Ifá Training" class="w-full aspect-[16/10] object-cover object-center" />
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-3">Ifá Training</h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4">Structured learning in Ifá knowledge, divination principles and traditional practices for serious students.</p>
+              <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+            </div>
           </div>
-          <div class="bg-cream rounded-2xl p-8 border border-cream-dark">
-            <h3 class="font-serif text-xl font-semibold text-forest mb-3">Cultural Education</h3>
-            <p class="text-ink/70 text-sm leading-relaxed mb-4">Yoruba language, history, values and living traditions taught with depth and cultural integrity.</p>
-            <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+          <div class="bg-cream rounded-2xl overflow-hidden border border-cream-dark flex flex-col">
+            <img src="images/yoruba-education.jpg" alt="Yoruba Cultural Education" class="w-full aspect-[16/10] object-cover object-center" />
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="font-serif text-xl font-semibold text-forest mb-3">Cultural Education</h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4">Yoruba language, history, values and living traditions taught with depth and cultural integrity.</p>
+              <a href="services.html" class="text-forest text-sm font-medium hover:text-forest-mid">Learn more →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +201,6 @@
     </div>
   </footer>
 
-  <!-- Fixed Floating Widget (z-40 ensures it floats above hero) -->
   <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600" aria-label="Contact us on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.76.967-.93 1.166-.168.199-.337.223-.634.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.006a6.96 6.96 0 0 0-7.145 6.959c0 1.339.338 2.646.982 3.803l-1.052 3.849 3.949-1.032c1.11.603 2.358.92 3.651.92h.006A6.96 6.96 0 0 0 12.3 3.359c1.814 0 3.527.704 4.815 1.992a6.937 6.937 0 0 1 1.992 4.815M12.034 2.43c3.865 0 7.004 3.139 7.004 7.004 0 3.865-3.139 7.004-7.004 7.004-1.874 0-3.63-.73-4.949-2.048S5.037 13.908 5.037 12.034c0-3.865 3.139-7.004 7.004-7.004m0-1c-4.418 0-8.004 3.586-8.004 8.004 0 1.552.445 3.005 1.221 4.245L2.03 21.97l5.718-1.5c1.24.776 2.693 1.221 4.245 1.221 4.418 0 8.004-3.586 8.004-8.004 0-4.418-3.586-8.004-8.004-8.004"/></svg>
   </a>
