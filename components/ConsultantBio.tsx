@@ -12,10 +12,10 @@ interface ConsultantBioProps {
  Purpose: Editorial, magazine-style biography block for the About page.
  Notes:
  - Uses Playfair Display for headings via next/font import applied at app-level.
- - Default portrait path is /b731bb3e-8df8-4115-a5a4-31b97432c38b.jpeg. Pass portraitSrc prop to override.
+ - Default portrait path is /images/portrait.jpeg. Pass portraitSrc prop to override.
 */
 const ConsultantBio: React.FC<ConsultantBioProps> = ({
-  portraitSrc = "/b731bb3e-8df8-4115-a5a4-31b97432c38b.jpeg",
+  portraitSrc = "/images/portrait.jpeg",
   portraitAlt = "Portrait of Oluwo Dr. Faniyi Adebanjo Adifagbola",
   className = "",
 }) => {
