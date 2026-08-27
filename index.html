@@ -31,7 +31,6 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
-    .hero-photo { object-position: 70% center; }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -68,37 +67,26 @@
     </div>
   </header>
 
-<main class="flex-grow">
-    <section class="bg-forest-dark">
-      <div class="grid grid-cols-1 lg:grid-cols-2 min-h-0 lg:min-h-[88vh]">
-        <div class="order-2 lg:order-1 flex items-center bg-[#0f1f16]">
-          <div class="w-full max-w-xl mx-auto px-6 sm:px-10 lg:px-14 py-12 lg:py-16">
-            <p class="text-gold text-[10px] sm:text-[11px] tracking-[0.26em] uppercase font-medium leading-relaxed">
-              Ifá Wisdom · Ancestral Tradition
-            </p>
-            <p class="text-gold text-[10px] sm:text-[11px] tracking-[0.26em] uppercase font-medium mt-1">
-              Spiritual Guidance
-            </p>
-            <h1 class="font-serif mt-7 text-[2.15rem] sm:text-4xl lg:text-[3.15rem] font-medium text-cream leading-[1.15] tracking-tight">
-              Authentic Ifá<br />
-              Consultation <span class="text-gold">Rooted in</span><br />
-              <span class="text-gold">Tradition</span>
-            </h1>
-            <p class="mt-6 text-cream/75 text-sm sm:text-base leading-relaxed">
-              Professional Ifá consultation, training and Yoruba cultural guidance for clients worldwide.
-            </p>
-            <p class="mt-3 text-cream/40 text-xs tracking-wide">
-              Registered in England & Wales · Serving clients globally
-            </p>
-            <a href="contact.html" class="mt-8 inline-flex items-center justify-center px-7 py-3.5 bg-gold text-forest-dark font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">
-              Book Ifá Consultation
-            </a>
-          </div>
-        </div>
-        <div class="order-1 lg:order-2 relative min-h-[52vh] sm:min-h-[58vh] lg:min-h-full bg-forest-dark">
-          <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shells used in Ifá practice" class="hero-photo absolute inset-0 w-full h-full object-cover" />
-        </div>
+  <main class="flex-grow">
+    <section class="relative bg-forest-dark">
+      <div class="relative w-full">
+        <img
+          src="hero.jpg"
+          alt="Carved ceremonial mask with a cowrie shell on the eye — Experience Authenticity"
+          class="w-full h-auto block select-none"
+        />
+        <a
+          href="contact.html"
+          class="absolute z-10 right-[3.5%] bottom-[7.5%] w-[24%] max-w-[280px] h-[11%] min-h-[44px]"
+          aria-label="Book a divination"
+        ></a>
       </div>
+      <a
+        href="contact.html"
+        class="sm:hidden flex items-center justify-center px-5 py-3.5 bg-gold text-forest-dark font-semibold text-sm tracking-wide"
+      >
+        Book a Divination
+      </a>
     </section>
 
     <section class="bg-gold text-forest">
