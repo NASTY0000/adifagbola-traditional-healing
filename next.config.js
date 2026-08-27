@@ -1,10 +1,2 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  typescript: {
-    // Temporarily allow production builds to succeed while we add type deps
-    ignoreBuildErrors: true,
-  },
-};
-
-module.exports = nextConfig;
+// next.config.js neutralized to avoid temporary ignoreBuildErrors left by assistant.
+module.exports = {};
