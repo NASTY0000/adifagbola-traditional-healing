@@ -36,6 +36,14 @@
         linear-gradient(90deg, rgba(12,26,18,0.08) 42%, rgba(12,26,18,0.22) 72%, rgba(12,26,18,0.48) 100%),
         linear-gradient(0deg, rgba(12,26,18,0.55) 0%, rgba(12,26,18,0.12) 38%, rgba(12,26,18,0.18) 100%);
     }
+    .hero-panel-fade {
+      background-color: #0c1a12;
+      background-image:
+        linear-gradient(rgba(12, 26, 18, 0.90), rgba(12, 26, 18, 0.92)),
+        url('hero.jpeg');
+      background-size: cover;
+      background-position: center 28%;
+    }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -99,9 +107,9 @@
         </div>
       </div>
 
-      <div class="md:hidden px-5 py-8 text-center">
-        <p class="font-serif text-gold tracking-[0.12em] text-[0.7rem] mb-3">IFÁ WISDOM • ANCESTRAL TRADITION • SPIRITUAL GUIDANCE</p>
-        <h1 class="font-serif text-gold text-[1.85rem] leading-tight tracking-wide mb-6">
+      <div class="md:hidden hero-panel-fade px-5 py-12 text-center">
+        <p class="font-serif text-gold tracking-[0.12em] text-[0.7rem] mb-4">IFÁ WISDOM • ANCESTRAL TRADITION • SPIRITUAL GUIDANCE</p>
+        <h1 class="font-serif text-gold text-[1.85rem] leading-tight tracking-wide mb-8">
           EXPERIENCE AUTHENTICITY
         </h1>
         <a
