@@ -31,6 +31,11 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-scrim {
+      background:
+        linear-gradient(90deg, rgba(12,26,18,0.08) 42%, rgba(12,26,18,0.22) 72%, rgba(12,26,18,0.48) 100%),
+        linear-gradient(0deg, rgba(12,26,18,0.55) 0%, rgba(12,26,18,0.12) 38%, rgba(12,26,18,0.18) 100%);
+    }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -72,21 +77,42 @@
       <div class="relative w-full">
         <img
           src="hero.jpg"
-          alt="Carved ceremonial mask with a cowrie on the eye — Timeless. Intricate. Wisdom. Experience Authenticity"
+          alt="Carved ceremonial mask with a cowrie shell on the eye"
           class="w-full h-auto block select-none"
         />
+
+        <div class="hidden md:block absolute inset-0 hero-scrim pointer-events-none" aria-hidden="true"></div>
+
+        <div class="hidden md:flex absolute inset-0 z-10 flex-col justify-between px-8 lg:px-12 xl:px-16 py-8 lg:py-10">
+          <p class="self-end font-serif text-gold tracking-[0.22em] text-sm lg:text-[0.95rem]">
+            TIMELESS. INTRICATE. WISDOM.
+          </p>
+          <div class="flex items-end justify-between gap-8">
+            <h1 class="font-serif text-gold text-4xl lg:text-5xl xl:text-[3.35rem] leading-[1.08] font-medium tracking-wide">
+              EXPERIENCE<br />AUTHENTICITY
+            </h1>
+            <a
+              href="contact.html"
+              class="shrink-0 inline-flex items-center justify-center px-6 py-3.5 bg-gold text-forest-dark text-xs lg:text-sm font-semibold tracking-[0.14em] hover:bg-gold-light transition-colors"
+            >
+              BOOK A DIVINATION&nbsp;>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:hidden px-5 py-8 text-center">
+        <p class="font-serif text-gold tracking-[0.2em] text-xs mb-3">TIMELESS. INTRICATE. WISDOM.</p>
+        <h1 class="font-serif text-gold text-[1.85rem] leading-tight tracking-wide mb-6">
+          EXPERIENCE AUTHENTICITY
+        </h1>
         <a
           href="contact.html"
-          class="absolute z-10 right-[3.5%] bottom-[7.5%] w-[24%] max-w-[280px] h-[11%] min-h-[44px]"
-          aria-label="Book a divination"
-        ></a>
+          class="inline-flex items-center justify-center w-full max-w-xs px-6 py-3.5 bg-gold text-forest-dark text-sm font-semibold tracking-[0.14em]"
+        >
+          BOOK A DIVINATION&nbsp;>
+        </a>
       </div>
-      <a
-        href="contact.html"
-        class="sm:hidden flex items-center justify-center px-5 py-3.5 bg-gold text-forest-dark font-semibold text-sm tracking-wide"
-      >
-        Book a Divination
-      </a>
     </section>
 
     <section class="bg-gold text-forest">
@@ -239,7 +265,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20If%C3%A1%20consultation" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600" aria-label="Contact us on WhatsApp">
+  <a href="https://wa.me/447876051712?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Ifá%20consultation" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600" aria-label="Contact us on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.76.967-.93 1.166-.168.199-.337.223-.634.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.006a6.96 6.96 0 0 0-7.145 6.959c0 1.339.338 2.646.982 3.803l-1.052 3.849 3.949-1.032c1.11.603 2.358.92 3.651.92h.006A6.96 6.96 0 0 0 12.3 3.359c1.814 0 3.527.704 4.815 1.992a6.937 6.937 0 0 1 1.992 4.815M12.034 2.43c3.865 0 7.004 3.139 7.004 7.004 0 3.865-3.139 7.004-7.004 7.004-1.874 0-3.63-.73-4.949-2.048S5.037 13.908 5.037 12.034c0-3.865 3.139-7.004 7.004-7.004m0-1c-4.418 0-8.004 3.586-8.004 8.004 0 1.552.445 3.005 1.221 4.245L2.03 21.97l5.718-1.5c1.24.776 2.693 1.221 4.245 1.221 4.418 0 8.004-3.586 8.004-8.004 0-4.418-3.586-8.004-8.004-8.004"/></svg>
   </a>
 
