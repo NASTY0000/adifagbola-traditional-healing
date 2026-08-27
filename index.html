@@ -31,21 +31,7 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
-    .hero-scrim {
-      background:
-        linear-gradient(180deg, rgba(12,26,18,0.35) 0%, rgba(12,26,18,0.62) 42%, rgba(12,26,18,0.92) 100%);
-    }
-    @media (min-width: 768px) {
-      .hero-scrim {
-        background:
-          radial-gradient(ellipse at 32% 50%, rgba(12,26,18,0.18) 0%, rgba(12,26,18,0.55) 42%, rgba(12,26,18,0.82) 100%),
-          linear-gradient(90deg, rgba(12,26,18,0.88) 0%, rgba(12,26,18,0.72) 36%, rgba(12,26,18,0.28) 62%, rgba(12,26,18,0.08) 100%);
-      }
-    }
-    .hero-photo { object-position: center 18%; }
-    @media (min-width: 768px) {
-      .hero-photo { object-position: 72% center; }
-    }
+    .hero-photo { object-position: 70% center; }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -83,31 +69,34 @@
   </header>
 
 <main class="flex-grow">
-    <section class="relative w-full min-h-[82vh] md:min-h-[88vh] overflow-hidden bg-forest-dark">
-      <div class="absolute inset-0">
-        <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shells used in Ifá practice" class="hero-photo w-full h-full object-cover" />
-      </div>
-      <div class="hero-scrim absolute inset-0 z-10"></div>
-      <div class="relative z-20 min-h-[82vh] md:min-h-[88vh] flex items-end md:items-center px-5 sm:px-8 md:px-12 lg:px-16 pb-14 md:pb-0">
-        <div class="w-full max-w-2xl text-center md:text-left">
-          <p class="text-gold text-[10px] sm:text-[11px] md:text-xs tracking-[0.28em] uppercase font-medium leading-relaxed">
-            Ifá Wisdom · Ancestral Tradition ·
-            <span class="block md:inline">Spiritual Guidance</span>
-          </p>
-          <h1 class="font-serif mt-8 md:mt-10 text-[2.35rem] sm:text-5xl md:text-[3.65rem] lg:text-[4.15rem] font-medium text-cream leading-[1.12] tracking-tight">
-            Authentic Ifá<br />
-            Consultation <span class="text-gold">Rooted in</span><br />
-            <span class="text-gold">Tradition</span>
-          </h1>
-          <p class="mt-7 md:mt-8 text-cream/75 text-[0.95rem] md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-            Professional Ifá consultation, training and Yoruba cultural guidance for clients worldwide.
-          </p>
-          <p class="mt-4 text-cream/40 text-xs md:text-sm tracking-wide">
-            Registered in England & Wales · Serving clients globally
-          </p>
-          <a href="contact.html" class="mt-8 inline-flex items-center justify-center px-7 py-3.5 bg-gold text-forest-dark font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">
-            Book Ifá Consultation
-          </a>
+    <section class="bg-forest-dark">
+      <div class="grid grid-cols-1 lg:grid-cols-2 min-h-0 lg:min-h-[88vh]">
+        <div class="order-2 lg:order-1 flex items-center bg-[#0f1f16]">
+          <div class="w-full max-w-xl mx-auto px-6 sm:px-10 lg:px-14 py-12 lg:py-16">
+            <p class="text-gold text-[10px] sm:text-[11px] tracking-[0.26em] uppercase font-medium leading-relaxed">
+              Ifá Wisdom · Ancestral Tradition
+            </p>
+            <p class="text-gold text-[10px] sm:text-[11px] tracking-[0.26em] uppercase font-medium mt-1">
+              Spiritual Guidance
+            </p>
+            <h1 class="font-serif mt-7 text-[2.15rem] sm:text-4xl lg:text-[3.15rem] font-medium text-cream leading-[1.15] tracking-tight">
+              Authentic Ifá<br />
+              Consultation <span class="text-gold">Rooted in</span><br />
+              <span class="text-gold">Tradition</span>
+            </h1>
+            <p class="mt-6 text-cream/75 text-sm sm:text-base leading-relaxed">
+              Professional Ifá consultation, training and Yoruba cultural guidance for clients worldwide.
+            </p>
+            <p class="mt-3 text-cream/40 text-xs tracking-wide">
+              Registered in England & Wales · Serving clients globally
+            </p>
+            <a href="contact.html" class="mt-8 inline-flex items-center justify-center px-7 py-3.5 bg-gold text-forest-dark font-semibold text-sm rounded-full hover:bg-gold-dark transition-colors">
+              Book Ifá Consultation
+            </a>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 relative min-h-[52vh] sm:min-h-[58vh] lg:min-h-full bg-forest-dark">
+          <img src="hero.jpg" alt="Carved ceremonial mask with cowrie shells used in Ifá practice" class="hero-photo absolute inset-0 w-full h-full object-cover" />
         </div>
       </div>
     </section>
