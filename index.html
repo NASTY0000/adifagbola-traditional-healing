@@ -71,7 +71,6 @@
     <section class="relative bg-forest-dark">
       <div class="relative w-full">
         <img
-          id="hero-photo"
           src="hero.jpg"
           alt="Carved ceremonial mask with a cowrie on the eye — Timeless. Intricate. Wisdom. Experience Authenticity"
           class="w-full h-auto block select-none"
@@ -89,19 +88,6 @@
         Book a Divination
       </a>
     </section>
-    <script>
-      (function () {
-        var files = ['hero-p1.txt','hero-p2.txt','hero-p3.txt','hero-p4.txt','hero-p5.txt','hero-p6.txt'];
-        Promise.all(files.map(function (f) { return fetch(f).then(function (r) { return r.ok ? r.text() : ''; }); }))
-          .then(function (parts) {
-            var b64 = parts.join('').replace(/\s+/g, '');
-            if (b64.length > 1000) {
-              document.getElementById('hero-photo').src = 'data:image/jpeg;base64,' + b64;
-            }
-          })
-          .catch(function () {});
-      })();
-    </script>
 
     <section class="bg-gold text-forest">
       <div class="max-w-6xl mx-auto px-5 py-3.5">
