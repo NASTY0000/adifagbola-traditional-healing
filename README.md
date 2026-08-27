@@ -1,31 +1,31 @@
 # Adifagbola Traditional Healing Ltd
 
-Professional multi-page website for Adifagbola Traditional Healing Ltd — authentic Ifá spiritual consultation, Yoruba cultural education, and traditional wellbeing services.
+Public site for Adifagbola Traditional Healing Ltd — authentic Ifá consultation, training, and Yoruba cultural services.
 
-## Pages
+Live: https://adifagbola-traditional-healing.vercel.app
 
-- **Home** (`index.html`) — Hero, announcement banner, feature teasers
-- **Services** (`services.html`) — Full grid of all traditional services
-- **About** (`about.html`) — Mission, registration announcement, values
-- **Contact** (`contact.html`) — Contact details + booking placeholder
+## Live site (static)
 
-## Design
+Vercel serves the HTML pages. `vercel.json` forces a static deploy so the Next.js files in this repo are not built.
 
-- Deep forest green `#1a3c28`
-- Rich gold `#f4d068`
-- Warm cream `#faf8f5`
+- **Home** (`index.html`)
+- **Services** (`services.html`)
+- **About** (`about.html`) — Oluwo Dr. Faniyi Adebanjo Adifagbola, lineage and practice
+- **Shop** (`shop.html`)
+- **Contact** (`contact.html`) — WhatsApp and email. Bookings are arranged on WhatsApp (`+44 7876 051712`)
+
+## Design tokens
+
+- Forest `#14281c`
+- Gold `#e8c56a`
+- Cream `#f7f4ef`
 - Playfair Display (headings) + Inter (body)
-- Fully responsive, mobile-first
 
-## Deploy to Vercel
+## Next.js scaffolding
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project → Import the repository
-3. Deploy (static site, no build step needed)
+`pages/`, `components/`, `styles/`, and `package.json` are a partial migration. See `NEXTJS_SETUP.md`. Do not add `next.config.js` until that work is complete.
 
 ## Local preview
-
-Just open `index.html` in a browser, or use any static server:
 
 ```bash
 npx serve .
