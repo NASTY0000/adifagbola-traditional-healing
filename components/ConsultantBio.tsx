@@ -50,15 +50,6 @@ const ConsultantBio: React.FC<ConsultantBioProps> = ({
             >
               Oluwo Dr. Faniyi Adebanjo Adifagbola
             </h1>
-            <p
-              className="mt-3 text-[#1a3c28] text-sm md:text-base font-semibold"
-              style={{
-                fontFamily:
-                  "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-              }}
-            >
-              Sixth-Generation Ifá Practitioner & Traditional Healer
-            </p>
           </header>
 
           <div className="max-w-none text-[#1a3c28] font-sans leading-relaxed">
