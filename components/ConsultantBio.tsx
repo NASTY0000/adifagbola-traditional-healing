@@ -16,7 +16,7 @@ interface ConsultantBioProps {
 */
 const ConsultantBio: React.FC<ConsultantBioProps> = ({
   portraitSrc = "/images/portrait.jpeg",
-  portraitAlt = "Portrait of Oluwo Dr. Faniyi Adebanjo Adifagbola",
+  portraitAlt = "Portrait of Babaláwo Dr. Faniyi Adebanjo Adifagbola",
   className = "",
 }) => {
   return (
@@ -48,7 +48,7 @@ const ConsultantBio: React.FC<ConsultantBioProps> = ({
               className="text-[#f4d068] text-3xl md:text-4xl leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Oluwo Dr. Faniyi Adebanjo Adifagbola
+              Babaláwo Dr. Faniyi Adebanjo Adifagbola
             </h1>
           </header>
 
@@ -58,7 +58,7 @@ const ConsultantBio: React.FC<ConsultantBioProps> = ({
                 Lineage & Heritage
               </h3>
               <p className="mb-0 leading-relaxed">
-                Oluwo Dr. Faniyi Adebanjo Adifagbola is a distinguished practitioner of the ancient Yoruba tradition of Ifá, representing the sixth generation of his family lineage dedicated to the preservation and transmission of this sacred knowledge. From a young age, he was immersed in the teachings, values, and practices of Ifá, receiving guidance directly from his family. His father, Chief Dr. Ifáyemi Adifagbola, who is the Oluwo Ifá of Isawo, Ikorodu, and his uncle and mentor, Chief Dr. Ifáyiga Adifagbola, the Asoju Awo of Ogun State, played a significant role in his spiritual upbringing and education.
+                Babaláwo Dr. Faniyi Adebanjo Adifagbola is a distinguished practitioner of the ancient Yoruba tradition of Ifá, representing the sixth generation of his family lineage dedicated to the preservation and transmission of this sacred knowledge. From a young age, he was immersed in the teachings, values, and practices of Ifá, receiving guidance directly from his family. His father, Chief Dr. Ifáyemi Adifagbola, who is the Oluwo Ifá of Isawo, Ikorodu, and his uncle and mentor, Chief Dr. Ifáyiga Adifagbola, the Asoju Awo of Ogun State, played a significant role in his spiritual upbringing and education.
               </p>
             </section>
 
@@ -76,7 +76,7 @@ const ConsultantBio: React.FC<ConsultantBioProps> = ({
                 Mission & Ethics
               </h3>
               <p className="mb-0 leading-relaxed">
-                His mission is to preserve, honor, and share authentic Yoruba spiritual practices with communities in the United Kingdom and across the diaspora. He aims to create a respectful environment where individuals can learn about Ifá divination and Yoruba traditions from an authentic cultural perspective, while maintaining the integrity and values entrusted to him through generations. He emphasizes confidentiality, honesty, and respect in his practice. All information shared during consultations is treated with absolute discretion. Oluwo Dr. Faniyi approaches each person with dignity, compassion, and professionalism, upholding the sacred principles of the Ifá tradition.
+                His mission is to preserve, honor, and share authentic Yoruba spiritual practices with communities in the United Kingdom and across the diaspora. He aims to create a respectful environment where individuals can learn about Ifá divination and Yoruba traditions from an authentic cultural perspective, while maintaining the integrity and values entrusted to him through generations. He emphasizes confidentiality, honesty, and respect in his practice. All information shared during consultations is treated with absolute discretion. Babaláwo Dr. Faniyi approaches each person with dignity, compassion, and professionalism, upholding the sacred principles of the Ifá tradition.
               </p>
             </section>
           </div>
