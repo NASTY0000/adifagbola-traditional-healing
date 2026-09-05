@@ -6,7 +6,7 @@ export default function About() {
     <>
       <Head>
         <title>About — Adifagbola Traditional Healing</title>
-        <meta name="description" content="About Oluwo Dr. Faniyi Adebanjo Adifagbola — Sixth-Generation Ifá Practitioner" />
+        <meta name="description" content="About Babaláwo Dr. Faniyi Adebanjo Adifagbola — Sixth-Generation Ifá Practitioner" />
       </Head>
 
       <main>

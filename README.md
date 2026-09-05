@@ -10,7 +10,7 @@ Vercel serves the HTML pages. `vercel.json` forces a static deploy so the Next.j
 
 - **Home** (`index.html`)
 - **Services** (`services.html`)
-- **About** (`about.html`) — Oluwo Dr. Faniyi Adebanjo Adifagbola, lineage and practice
+- **About** (`about.html`) — Babaláwo Dr. Faniyi Adebanjo Adifagbola, lineage and practice
 - **Shop** (`shop.html`)
 - **Contact** (`contact.html`) — WhatsApp and email. Bookings are arranged on WhatsApp (`+44 7876 051712`)
 
