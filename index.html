@@ -44,6 +44,18 @@
       background-size: cover;
       background-position: center 28%;
     }
+    /* Hide Elfsight free-plan branding */
+    #social-feed-embed a[href*="elfsight.com"],
+    #social-feed-embed [class*="es-footer"],
+    #social-feed-embed [class*="WidgetTitle"],
+    #social-feed-embed a[href*="elfsight.com"] span {
+      display: none !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
   </style>
 </head>
 <body class="bg-cream text-ink min-h-screen flex flex-col antialiased">
@@ -187,21 +199,26 @@
             </div>
           </div>
         </div>
+        <div class="text-center mt-12">
+          <p class="text-ink/60 text-sm mb-5">These are a few of our offerings. Explore the full list of traditional services.</p>
+          <a href="services.html" class="inline-flex items-center justify-center px-7 py-3.5 bg-forest text-cream font-semibold text-sm rounded-full hover:bg-forest-light transition-colors">
+            View all services
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="py-16 md:py-20 bg-[#faf8f5]" id="living-tradition">
-      <div class="max-w-4xl mx-auto px-5">
+      <div class="max-w-6xl mx-auto px-5">
         <div class="text-center mb-10">
-          <p class="text-forest-mid text-xs tracking-[0.2em] uppercase font-medium mb-3">From the House of Adifagbola</p>
           <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest mb-3">Living Tradition</h2>
-          <p class="text-ink/70 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+          <p class="text-ink/70 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             Authentic glimpses into sacred practices, cultural celebrations, and community healing sessions.
           </p>
         </div>
         <div
           id="social-feed-embed"
-          class="w-full max-w-3xl mx-auto min-h-[480px] rounded-xl shadow-lg bg-white border border-[#ebe6dc] overflow-hidden p-2 sm:p-4"
+          class="w-full min-h-[400px] rounded-xl bg-transparent overflow-hidden"
           aria-label="Instagram feed from Adifagbola Traditional Healing"
         >
           <div class="elfsight-app-89d0a981-3bde-42f9-85c7-3ead2cdefcb8" data-elfsight-app-lazy></div>
