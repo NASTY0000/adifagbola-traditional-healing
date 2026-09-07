@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 /**
- * Ceremonies page section: editorial feed for living tradition updates.
- * Paste an Elfsight (or similar) Instagram/Facebook widget inside the feed container
- * by replacing the placeholder paragraph with the provider script markup.
+ * Ceremonies page: editorial feed of living tradition updates via Elfsight Instagram widget.
  */
 const Ceremonies: React.FC = () => {
+  useEffect(() => {
+    const existing = document.querySelector(
+      'script[src="https://elfsightcdn.com/platform.js"]'
+    );
+    if (existing) return;
+
+    const script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#faf8f5] text-[#2c2418]">
       <section className="bg-[#1a3c28] py-16 md:py-20 px-5">
@@ -41,12 +51,14 @@ const Ceremonies: React.FC = () => {
 
           <div
             id="social-feed-embed"
-            className="w-full max-w-3xl mx-auto min-h-[600px] rounded-xl shadow-lg bg-white border border-[#ebe6dc] flex items-center justify-center p-8"
-            aria-label="Social media feed placeholder"
+            className="w-full max-w-3xl mx-auto min-h-[600px] rounded-xl shadow-lg bg-white border border-[#ebe6dc] overflow-hidden p-2 sm:p-4"
+            aria-label="Instagram feed from Adifagbola Traditional Healing"
           >
-            <p className="text-center text-[#2c2418]/45 text-sm tracking-wide font-medium font-sans">
-              [Insert Elfsight Instagram/Facebook Embed Script Here]
-            </p>
+            {/* Elfsight Instagram Feed */}
+            <div
+              className="elfsight-app-89d0a981-3bde-42f9-85c7-3ead2cdefcb8"
+              data-elfsight-app-lazy
+            />
           </div>
         </div>
       </section>
