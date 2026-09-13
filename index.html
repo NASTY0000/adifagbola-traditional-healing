@@ -52,7 +52,11 @@
     #social-feed-embed a[href*="elfsight.com"],
     #social-feed-embed [class*="es-footer"],
     #social-feed-embed [class*="WidgetTitle"],
-    #social-feed-embed a[href*="elfsight.com"] span {
+    #social-feed-embed a[href*="elfsight.com"] span,
+    #youtube-gallery-embed a[href*="elfsight.com"],
+    #youtube-gallery-embed [class*="es-footer"],
+    #youtube-gallery-embed [class*="WidgetTitle"],
+    #youtube-gallery-embed a[href*="elfsight.com"] span {
       display: none !important;
       height: 0 !important;
       overflow: hidden !important;
@@ -102,29 +106,15 @@
 
   <main class="flex-grow">
     <section class="relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-forest-dark">
-      <img
-        src="hero.jpg"
-        alt="Babaláwo Dr. Faniyi Adebanjo Adifagbola in traditional attire"
-        class="absolute inset-0 w-full h-full object-cover object-[center_20%] select-none"
-      />
+      <img src="hero.jpg" alt="Babaláwo Dr. Faniyi Adebanjo Adifagbola in traditional attire" class="absolute inset-0 w-full h-full object-cover object-[center_20%] select-none" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent pointer-events-none" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
-
       <div class="relative z-10 h-full flex flex-col justify-end pb-16 sm:pb-20 md:pb-24 px-5 sm:px-8 lg:px-12 xl:px-16">
         <div class="max-w-6xl mx-auto w-full">
-          <p class="font-serif text-gold tracking-[0.18em] text-[0.7rem] sm:text-xs md:text-sm mb-3 sm:mb-4">
-            IFÁ WISDOM · ANCESTRAL TRADITION · SPIRITUAL GUIDANCE
-          </p>
+          <p class="font-serif text-gold tracking-[0.18em] text-[0.7rem] sm:text-xs md:text-sm mb-3 sm:mb-4">IFÁ WISDOM · ANCESTRAL TRADITION · SPIRITUAL GUIDANCE</p>
           <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 sm:gap-10">
-            <h1 class="font-serif text-cream text-4xl sm:text-5xl md:text-6xl lg:text-[3.75rem] leading-[1.05] font-medium tracking-wide max-w-xl">
-              Experience<br class="hidden sm:block" /> Authenticity
-            </h1>
-            <a
-              href="contact.html"
-              class="shrink-0 inline-flex items-center justify-center self-start sm:self-auto px-7 py-3.5 sm:px-8 sm:py-4 bg-gold text-forest-dark text-xs sm:text-sm font-semibold tracking-[0.14em] uppercase hover:bg-gold-light transition-colors mr-16 sm:mr-20"
-            >
-              Book a Divination
-            </a>
+            <h1 class="font-serif text-cream text-4xl sm:text-5xl md:text-6xl lg:text-[3.75rem] leading-[1.05] font-medium tracking-wide max-w-xl">Experience<br class="hidden sm:block" /> Authenticity</h1>
+            <a href="contact.html" class="shrink-0 inline-flex items-center justify-center self-start sm:self-auto px-7 py-3.5 sm:px-8 sm:py-4 bg-gold text-forest-dark text-xs sm:text-sm font-semibold tracking-[0.14em] uppercase hover:bg-gold-light transition-colors mr-16 sm:mr-20">Book a Divination</a>
           </div>
         </div>
       </div>
@@ -213,6 +203,22 @@
         <div class="text-center mt-8">
           <a href="https://www.instagram.com/adifagbolatraditionalhealing/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#f4d068] text-[#1a3c28] font-semibold text-sm rounded-full hover:bg-[#e8c56a] transition-colors shadow-sm">Follow on Instagram</a>
           <p class="mt-3 text-ink/40 text-xs">@adifagbolatraditionalhealing</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-white" id="video-teachings">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="text-center mb-10">
+          <p class="text-forest-mid text-xs tracking-[0.2em] uppercase font-medium mb-3">From the Channel</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest mb-3">Video Teachings</h2>
+          <p class="text-ink/70 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">Talks, ceremonies, and teachings shared by the Babaláwo for the community.</p>
+        </div>
+        <div id="youtube-gallery-embed" class="w-full min-h-[400px] rounded-xl bg-transparent overflow-hidden" aria-label="YouTube gallery from Adifagbola Traditional Healing">
+          <div class="elfsight-app-cb038365-dee7-4965-8d98-8ace12cde097" data-elfsight-app-lazy></div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://www.youtube.com/@adifagbolatraditionalhealing" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-7 py-3 bg-forest text-cream font-semibold text-sm rounded-full hover:bg-forest-light transition-colors shadow-sm">Watch on YouTube</a>
         </div>
       </div>
     </section>
